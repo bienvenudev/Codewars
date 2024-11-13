@@ -14,5 +14,5 @@ function openOrSenior(data){
 
 
 
-// arr = [[45, 12], [55, 21], [19, -2], [104, 20]]
+// test should output = [ 'Open', 'Senior', 'Open', 'Senior' ]
 console.log(openOrSenior([[45, 12],[55,21],[19, -2],[104, 20]]));
