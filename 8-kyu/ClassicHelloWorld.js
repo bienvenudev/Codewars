@@ -10,7 +10,10 @@
 // and that only prints "Hello World!" without any return.
 
 class Solution {
-  main(word1, word2) {
+  static main(word1, word2) {
     console.log(`Hello World!`);
   }
 }
+
+// test should print 'Hello World!'
+Solution.main('par', 'par2')
