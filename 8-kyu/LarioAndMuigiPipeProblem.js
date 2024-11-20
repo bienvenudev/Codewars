@@ -15,3 +15,10 @@ function pipeFix(numbers) {
 
 // test should return [1,2,3,4,5,6,7,8,9,10,11,12]
 console.log(pipeFix([1, 2, 3, 12]));
+
+// 2nd short approach
+// const pipenum = []
+//  for (i=numbers[0]; i<=numbers[numbers.length-1]; i++) {
+//    pipenum.push(i)
+//  }
+// return pipenum
