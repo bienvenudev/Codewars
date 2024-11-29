@@ -16,13 +16,9 @@ const array = a.split("");
 const newArr = [];
 // using for loop to compare with previous
 for (i = 0; i < array.length; i++) {
-  if (array[i] === array[i - 1]) {
+  if (array[i] !== array[i + 1]) {
     newArr.push(array[i]);
   }
 }
-// using foreach
-array.forEach((word, index, array) => {
-  if (word === array[i - 1]) {
-    newArr.push(array[i]);
-  }
-});
+
+console.log(newArr);
