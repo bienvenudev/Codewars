@@ -21,4 +21,9 @@ for (i = 0; i < array.length; i++) {
   }
 }
 
-console.log(newArr);
+// using foreach
+array.forEach((word, index, array) => {
+  if (word === array[i - 1]) {
+    newArr.push(array[i]);
+  }
+});
