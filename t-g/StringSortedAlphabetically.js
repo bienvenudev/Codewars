@@ -12,23 +12,10 @@ longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
 a = "xyaabbbccccdefww";
 b = "xxxxyyyyabklmopq";
 
-const arrayA = a.split("");
-const uniqA = [];
-// using for loop to compare with previous
-for (i = 0; i < arrayA.length; i++) {
-  if (arrayA[i] !== arrayA[i + 1]) {
-    uniqA.push(arrayA[i]);
-  }
-}
+// using Set
+const combinedString = a + b;
+const arrayOfString = combinedString.split("");
+const set = new Set(arrayOfString);
+const arr = [...set];
 
-const arrayB = b.split("");
-const uniqB = [];
-// using for loop to compare with previous
-for (i = 0; i < arrayB.length; i++) {
-  if (arrayB[i] !== arrayB[i + 1]) {
-    uniqB.push(arrayB[i]);
-  }
-}
-
-console.log(uniqA);
-console.log(uniqB);
+console.log(arr.sort().join(""));
