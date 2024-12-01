@@ -12,18 +12,23 @@ longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
 a = "xyaabbbccccdefww";
 b = "xxxxyyyyabklmopq";
 
-const array = a.split("");
-const newArr = [];
+const arrayA = a.split("");
+const uniqA = [];
 // using for loop to compare with previous
-for (i = 0; i < array.length; i++) {
-  if (array[i] !== array[i + 1]) {
-    newArr.push(array[i]);
+for (i = 0; i < arrayA.length; i++) {
+  if (arrayA[i] !== arrayA[i + 1]) {
+    uniqA.push(arrayA[i]);
   }
 }
 
-// using foreach
-array.forEach((word, index, array) => {
-  if (word === array[i - 1]) {
-    newArr.push(array[i]);
+const arrayB = b.split("");
+const uniqB = [];
+// using for loop to compare with previous
+for (i = 0; i < arrayB.length; i++) {
+  if (arrayB[i] !== arrayB[i + 1]) {
+    uniqB.push(arrayB[i]);
   }
-});
+}
+
+console.log(uniqA);
+console.log(uniqB);
