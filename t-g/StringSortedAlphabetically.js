@@ -26,25 +26,8 @@ a = "xyaabbbccccdefww";
 b = "xxxxyyyyabklmopq";
 
 // using .includes
-const arrayA = a.split("");
-const uniqueA = [];
-
-for (let i = 0; i < arrayA.length; i++) {
-  if (!uniqueA.includes(arrayA[i])) {
-    uniqueA.push(arrayA[i]);
-  }
-}
-
-const arrayB = b.split("");
-const uniqueB = [];
-
-for (let i = 0; i < arrayB.length; i++) {
-  if (!uniqueB.includes(arrayB[i])) {
-    uniqueB.push(arrayB[i]);
-  }
-}
-
-const combinedArray = uniqueA.concat(uniqueB);
+const combinedString = a + b
+const combinedArray = combinedString.split("");
 const uniqueArray = [];
 
 for (let i = 0; i < combinedArray.length; i++) {
