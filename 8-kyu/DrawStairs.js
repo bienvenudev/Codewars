@@ -1,15 +1,12 @@
 function drawStairs(n) {
-  // after every I put \n
-  // after every \n add another space
-  let space = '';
-  for (i=0; i<n; i++) {
-      space += ' '
-      console.log(`I\n ${space}`)
+  let space = "";
+  let char = "I\n";
+  let results = [];
+  for (i = 0; i < n; i++) {
+    results.push(`${char} ${space}`);
+    space += " ";
   }
- 
- }
- 
- drawStairs(3)
- 
- // answer should be this
- // console.log("I\n I\n  I\n   I")
+  console.log(results.join(''));
+}
+
+drawStairs(5);
