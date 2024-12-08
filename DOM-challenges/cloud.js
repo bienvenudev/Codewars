@@ -51,4 +51,7 @@ const mostOccurrences = mostOccurrencesArray.map((item) => item[0]);
 
 console.log(mostOccurrences);
 
-// myWordCloud.textContent = mostOccurrences;
+mostOccurrences.forEach((word, i) => {
+  myWordCloud.innerHTML += `<p class='paragraph${i + 1}' >${word}</p>`;
+});
+
