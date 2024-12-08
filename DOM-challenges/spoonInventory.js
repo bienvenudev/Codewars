@@ -25,5 +25,21 @@ const spoonInventory = [
 
 /** A function for counting spoons. Wow. */
 function countSpoons() {
-  // Your code here
+  // store all spoons in an object
+  const allSpoons = {};
+  // for loop through spoons
+  for (let i = 0; i < spoonInventory.length; i++) {
+    const currentSpoon = spoonInventory[i];
+    
+    // Check if the spoon is already in the object
+    if (currentSpoon in allSpoons) {
+      allSpoons[currentSpoon]++; // Increment count if it exists
+    } else {
+      allSpoons[currentSpoon] = 1; // Initialize count to 1 if it doesn't exist
+    }
+  }
+  return allSpoons;
+  
 }
+
+console.log(countSpoons());
