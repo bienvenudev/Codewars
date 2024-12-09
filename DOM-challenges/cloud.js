@@ -1,7 +1,7 @@
 const myParagraph = document.querySelector("#myParagraph").innerText;
 const myWordCloud = document.querySelector("#myWordCloud");
 
-// replace all symbols with empty
+// replace all symbols with empty and newline with space
 const cleanParagraph = myParagraph
   .replaceAll(".", "")
   .replaceAll(",", "")
@@ -9,7 +9,7 @@ const cleanParagraph = myParagraph
   .replaceAll(";", "")
   .replaceAll("\n", " ");
 
-// split paragraph into an array
+// split paragraph string into an array using space
 const paragraphArray = cleanParagraph.split(" ");
 const unsortedObject = {};
 
