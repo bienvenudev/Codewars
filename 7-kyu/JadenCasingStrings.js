@@ -1,5 +1,5 @@
 String.prototype.toJadenCase = function () {
-  const lower = this.toLowerCase().split(' ');
+  const lower = this.toLowerCase().split(" ");
   const result = [];
   lower.forEach((word) => {
     result.push(word[0].toUpperCase() + word.slice(1, word.length));
